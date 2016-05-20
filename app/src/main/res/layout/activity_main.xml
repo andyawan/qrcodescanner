@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andysetiawan.qrcodescanner.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="50dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_btn_scan"
+                android:id="@+id/btnScanCode"
+                android:layout_marginTop="42dp"
+                android:minHeight="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:minWidth="400dp" />
+
+            <View
+                android:layout_width="400dp"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_marginTop="26dp"
+                android:id="@+id/view"
+                android:layout_below="@+id/btnScanCode"
+                android:layout_centerHorizontal="true"
+                android:contextClickable="false" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtProductCode"
+                android:layout_below="@+id/view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:hint="Type Product Code.."
+                android:minWidth="400dp"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="OR"
+                android:id="@+id/textView"
+                android:background="#FFFFFF"
+                android:layout_alignTop="@+id/view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-8dp"
+                android:minWidth="25dp"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_btn_find_product"
+                android:id="@+id/btnFindProduct"
+                android:minHeight="60dp"
+                android:singleLine="true"
+                android:minWidth="400dp"
+                android:layout_below="@+id/edtProductCode"
+                android:layout_alignLeft="@+id/edtProductCode"
+                android:layout_alignStart="@+id/edtProductCode"
+                android:layout_marginBottom="42dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
